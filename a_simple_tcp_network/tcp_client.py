@@ -12,6 +12,6 @@ message = raw_input('Input some words you wanna send to your server: ')
 client_connect.send(message)
 
 response = client_connect.recv(4096)
-print('[+]Server Responding: %s [+]' % response)
+print('Server Responding:\n%s' % response)
 
 client_connect.close()
